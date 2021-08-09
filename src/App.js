@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import UserProfileHeader from "./components/UserProfileHeader";
+import UserProfile from "./components/UserProfile";
 import dummyUser from "./utils/static/DummyUser";
 import "./App.css";
 
@@ -10,7 +10,7 @@ const App = () => {
         <nav></nav>
         <Switch>
           <Route path="/">
-            <UserProfileHeader user={dummyUser} />
+            <UserProfile user={dummyUser} />
           </Route>
         </Switch>
       </div>
