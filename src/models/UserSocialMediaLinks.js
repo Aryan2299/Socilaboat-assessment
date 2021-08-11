@@ -1,4 +1,4 @@
-export default function SocialMediaLinks(url, platform) {
+export default function UserSocialMediaLinks(url, platform) {
   this.url = url;
   this.platform = platform;
   if (platform === "FACEBOOK") {

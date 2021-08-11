@@ -22,6 +22,7 @@ const UserProfileHeader = (props) => {
       <div id="user-profile-details" style={headerUserDetailsOuterDivStyle}>
         <img
           src={user.imageUrl}
+          alt="user-profile"
           id="user-profile-header-picture"
           style={headerPictureStyle}
           height="250px"

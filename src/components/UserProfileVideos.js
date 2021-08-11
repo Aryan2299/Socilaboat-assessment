@@ -7,6 +7,7 @@ import {
   userVideosListStyle,
   userVideoCardStyle,
 } from "../style/UserProfileVideosStyle";
+import "../App.css";
 
 const UserProfileVideos = (props) => {
   return (
@@ -14,7 +15,11 @@ const UserProfileVideos = (props) => {
       <Draggable>
         {props.videos.map((item) => {
           return (
-            <li key={uuidv4()} style={userVideoCardStyle}>
+            <li
+              key={uuidv4()}
+              style={userVideoCardStyle}
+              className="video-card-list-item"
+            >
               <VideoCard videoUrl={item.url} />
               <ul>
                 <li>
@@ -32,4 +37,4 @@ const UserProfileVideos = (props) => {
   );
 };
 
-export default UserProfileVideos;
+export default React.memo(UserProfileVideos);

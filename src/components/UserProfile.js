@@ -4,6 +4,7 @@ import UserProfileVideos from "./UserProfileVideos";
 
 const UserProfile = (props) => {
   const { user } = props;
+
   return (
     <div id="user-profile-main">
       <UserProfileHeader user={user} />

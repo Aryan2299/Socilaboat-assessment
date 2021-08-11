@@ -9,7 +9,7 @@ export const userVideosListStyle = {
 export const userVideoCardStyle = {
   margin: "5px",
   borderRadius: "5px",
-  padding: "5px",
+  padding: "1rem",
   boxShadow: "2px -2px 10px -1px #ABABAB",
   display: "flex",
   flexDirection: "row",
